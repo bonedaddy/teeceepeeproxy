@@ -1,0 +1,16 @@
+[package]
+name = "cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+i2p = {git = "https://github.com/bonedaddy/i2p-rs.git", rev = "9cfc2607fbf7e40d0495d4aff5393efa4a39a02c"}
+env_logger = "0.5"
+log = "0.4.6"
+anyhow = "1"
+tokio = {version = "1.17.0", features = ["full", "rt-multi-thread"]}
+clap = "2.33.3"
+config = {path = "../config"}
+server = {path = "../server"}
